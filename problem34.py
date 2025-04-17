@@ -20,11 +20,13 @@ def freq(txt):
     return fre
 
 def main(filename):
+
     words=read_word(filename)
     frequency={}
     frequency = freq(words)
-    for word, count in frequency.items():
+    for word, count in sorted(frequency.items(), key=lambda x: x[1], reverse=True):
         print(word, count)
+
 
 if __name__ == "__main__":
     main(sys.argv[1])

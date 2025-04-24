@@ -32,9 +32,9 @@ def main(filename):
 
 
     
-if __name__ == "__main__":
-    n=sys.argv[1]
-    main(n)
+
+n=sys.argv[1]
+main(n)
 
 
     
